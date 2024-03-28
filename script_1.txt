@@ -1,0 +1,11 @@
+#!/bin/bush
+
+if [ -e $1 ]
+then
+echo "ok"
+cd $1
+rm -v *.bak *.tmp *.backup
+else
+echo "fail"
+fi
+
